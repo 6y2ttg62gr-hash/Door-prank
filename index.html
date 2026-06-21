@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Choose a Door</title>
+<style>
+  body {
+    font-family: Arial;
+    text-align: center;
+    background: #0a0a23;
+    color: white;
+  }
+  .container {
+    margin-top: 50px;
+  }
+  button {
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+  .blue { background: blue; color: white; }
+  .red { background: red; color: white; }
+
+  #result {
+    display: none;
+    margin-top: 30px;
+  }
+
+  img {
+    width: 300px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Choose a Door 🚪</h1>
+<p>Pick any one 😏</p>
+
+<div class="container">
+  <button class="blue" onclick="showResult()">Blue Door</button>
+  <button class="red" onclick="showResult()">Red Door</button>
+</div>
+
+<div id="result">
+  <h2>No matter what you chose...</h2>
+  <h1>❄️ The Source is South Pole ❄️</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/South_Pole_marker.jpg">
+</div>
+
+<script>
+function showResult() {
+  document.getElementById("result").style.display = "block";
+}
+</script>
+
+</body>
+</html>
